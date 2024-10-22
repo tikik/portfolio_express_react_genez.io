@@ -20,12 +20,10 @@ backend:
     - name: express
       # The path to the function's code.
       path: ./
-      # The name of the function handler
-      handler: handler
       # The entry point for the function.
       entry: app.mjs
       # The compatibility of the function handler.
-      type: aws
+      type: httpServer
   scripts:
     # List of scripts to run before deploying the backend.
     deploy: npm install
@@ -53,3 +51,4 @@ frontend:
     start:
       - npm install --silent
       - npm run dev --silent
+  subdomain: coral-variable-sloth
