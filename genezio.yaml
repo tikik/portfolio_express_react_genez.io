@@ -51,4 +51,3 @@ frontend:
     start:
       - npm install --silent
       - npm run dev --silent
-  subdomain: coral-variable-sloth
